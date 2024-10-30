@@ -6,6 +6,8 @@ I applied machine learning techniques to investigate the wildfire prediction in 
 
 ## Introduction 
 
+Wildfire occurs frequently in the state of California. The combustion would cause severe issues not only to the environment but also to the wellness of local communities. This model aims to predict wildfire occurance based on several environmental factors such as temperature, humidity, NDVI (National Difference Vegetation Index), etc. 
+
 Here is a summary description of the topic. Here is the problem. This is why the problem is important.
 
 There is some dataset that we can use to help solve this problem. This allows a machine learning approach. This is how I will solve the problem using supervised/unsupervised/reinforcement/etc. machine learning.
