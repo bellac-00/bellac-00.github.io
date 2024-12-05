@@ -1,7 +1,7 @@
 # Estimating Daily Average Air Quality with Ambient Air Pollution Particle Concentration
 Bella Chen 
 
-Instructor: Dr. Lozinski 
+Instructors: Dr. Lozinski，Catherine Banach
 
 AOS C 214 Introduction to Machine Learning for the Physical Sciences 
 
