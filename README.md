@@ -1,4 +1,1 @@
-Wildfire occurs frequently in the state of California. The combustion would cause severe issues not only to the environment but also to the wellness of local communities. This model aims to predict wildfire occurance based on several environmental factors such as temperature, humidity, vegetation types, and wind direction etc. I'm applying machine learning model such as linear regression and random forest regression to perform the prediction. 
-
-The goal of this model is to help with early warnings and better resource planning by giving useful insights for communities living in high-risk wildfire conditions. Local communities and emergency responders can benefit from this model by better preparing to reduce potential damage. This predictive tool could be an important resource for decision-makers, environmental groups, and first responders who are focused on lessening the impact of wildfires in California. 
-
+Air Quality has been a persisting environmental challenge. AQI (Air Quality Index) is used to statistically represent .. 
