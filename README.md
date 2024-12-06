@@ -176,10 +176,13 @@ Among the three models tested, including linear regression, random forest regres
 
 Among all three models, LightGBM  demonstrated the best prediction performance, as it achieves approximately 100% accuracy at low tolerance levels which is indicated by the REC curve. To further evaluate the reliability and robustness of this model, a k-fold cross-validation (5-fold) was performed, with the following results:
 
-Cross-Validation RMSE (Mean): 0.384
-Cross-Validation RMSE (Standard Deviation): 0.310
-Cross-Validation RMSE (Min): 0.106
-Cross-Validation RMSE (Max): 0.961
+- Cross-Validation RMSE (Mean): 0.384
+
+- Cross-Validation RMSE (Standard Deviation): 0.310
+
+- Cross-Validation RMSE (Min): 0.106
+
+- Cross-Validation RMSE (Max): 0.961
 
 The mean RMSE represents the average prediction error across all folds. A value of 0.384 is relatively low, indicating that the model's predictions are close to the true values, with only small errors on average. 
 
