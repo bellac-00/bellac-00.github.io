@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b3dec788-0d01-465d-acb8-4ce9e072ee25)# Estimating Daily Average Air Quality with Ambient Air Pollution Particle Concentration
+# Estimating Daily Average Air Quality with Ambient Air Pollution Particle Concentration
 Bella Chen 
 
 Instructors: Dr. Lozinski，Catherine Banach
