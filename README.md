@@ -185,7 +185,7 @@ The mean RMSE represents the average prediction error across all folds. A value 
 
 According to scholarly research, LightGBM models play a crucial role in understanding air pollution patterns. With its ability to efficiently handle non-linear data and its high processing speed, LightGBM emerges as the most suitable model for this task (Ravindiran et al., 2023). In contrast, linear regression struggled to capture the complex patterns in AQI data, while random forest, though robust, exhibited slightly lower precision.
 
-These findings underscore the importance of employing advanced tree-based methods like LightGBM for reliable air quality predictions. 
+In conclusion, these findings suggest that the increasing concentrations of ambient air pollutants such as fine particulate matter (PM<sub>2.5</sub>), ozone, and nitrogen dioxide, are closely related to poorer air quality. This underscores the importance of utilizing advanced tree-based methods like LightGBM for reliable and accurate air quality predictions.
 
 ## Works Cited
 AQI Basics | AirNow.gov. (n.d.). https://www.airnow.gov/aqi/aqi-basics/ 
