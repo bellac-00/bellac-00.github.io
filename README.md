@@ -122,11 +122,13 @@ The data was collected was U.S. EPA. Data preprocessing involved removing irrele
 ## Model Prediction and Results 
 For all models, the maximum tolerance (ϵ) is set to 20, as it effectively captures moderate changes in AQI, providing a balanced evaluation of the model's prediction accuracy.
 
-**Linear Regression Model**
+**Linear Regression Model** 
 
 Here is the performance of a linear model represented by the REC curve is shown below. 
 ![lr](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/linear_rec.png) 
+
 The RMSE result is **6.61** and R² is **0.879**. 
+
  
 **Random Forest Model**
 
@@ -135,6 +137,7 @@ The feature importance from the decision tree model is shown below:
 
 The RMSE result is **1.00** and R² is **0.997**. 
 The PM2.5 has a more significant effect on prediction on AQI. 
+
 
 **LightGBM**
 
@@ -150,8 +153,7 @@ Daily Max 1-hour NO2 Concentration: **766**
 The REC curve visualization is included to present a clear comparison. 
 ![rec](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/recs.png) 
 
-It is shown that even with a limited amount of features and sparse measurements, all 3 models, including linear regression, decision tree regression, artificial neural network, and ensemble method, can produce reliable predictions of local air quality, with the decision tree model having the best performance.
-
+It is shown that among all 3 models, including linear regression, decision tree regression, artificial neural network, and ensemble method, can produce reliable predictions of local air quality, with the decision tree model having the best performance.
 
 
 ## Discussions 
