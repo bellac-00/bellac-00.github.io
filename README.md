@@ -141,7 +141,8 @@ The PM2.5 has a more significant effect on prediction on AQI.
 
 **LightGBM**
 
-The LightGBM (Gradient Boosting Machine) is a high-performance implementation of the gradient boosting framework, specifically designed for speed and efficiency while maintaining prediction accuracy (Zhang et al., 2023). The feature importance from the decision tree model is shown below:
+The LightGBM (Gradient Boosting Machine) is a high-performance implementation of the gradient boosting framework, specifically designed for speed and efficiency while maintaining prediction accuracy (Zhang et al., 2023). 
+The feature importance from the decision tree model is shown below:
 ![lgbm](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/lgbm.png)
 
 The RMSE result is **0.0472** and R² is **0.999**. 
