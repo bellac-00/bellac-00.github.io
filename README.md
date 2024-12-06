@@ -22,7 +22,7 @@ Air quality is a persistent environmental challenge with significant implication
   
   301–500: Hazardous
 
-Understanding the AQI in our surroundings is crucial for assessing environmental risks and their impact on public health. Understanding the relationships between air quality and ambient air pollutants is crucial for designing targeted mitigation strategies, improving public health outcomes, and informing policies to address air pollution in the most affected areas. This model aims to predict AQI levels in California, enabling better decision-making, public awareness, and proactive measures to mitigate health risks associated with air pollution. 
+Understanding the AQI in our surroundings is crucial for assessing environmental risks and their impact on public health. Understanding the relationships between air quality and ambient air pollutants is crucial for designing targeted mitigation strategies, improving public health outcomes, and informing policies to address air pollution in the most affected areas. This machine learning model aims to predict AQI levels in California, enabling better decision-making, public awareness, and proactive measures to mitigate health risks associated with air pollution. 
 
 ## Data
 Three data sets were used in this project: daily AQI summary including daily mean PM<sub>2.5</sub> concentration, Ozone concentration, and NO<sub>2</sub> concentration along with geographical coordinates in the year 2022 provided by US EPA[2](https://www.epa.gov/outdoor-air-quality-data/download-daily-data). Parameters such as daily observations and county FIPS were ignored and cleaned after merging the data together. 
@@ -155,6 +155,14 @@ The REC curve visualization is included to present a clear comparison.
 
 It is shown that among all 3 models, including linear regression, decision tree regression, artificial neural network, and ensemble method, can produce reliable predictions of local air quality, with the decision tree model having the best performance.
 
+**k-fold cross-validation** 
+A k-fold cross-validation is performed to test the performance of LightGBM model. 
+![crs]()
+
+Cross-Validation RMSE (Mean): 0.384
+Cross-Validation RMSE (Standard Deviation): 0.310
+Cross-Validation RMSE (Min): 0.106
+Cross-Validation RMSE (Max): 0.961
 
 ## Discussions 
 Among all 3 models, the LightGBM model predicts the values the best. 
