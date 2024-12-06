@@ -8,7 +8,7 @@ AOS C 214 Introduction to Machine Learning for the Physical Sciences
 Final Project
 
 ## Introduction 
-Air quality is a persistent environmental challenge with significant implications for public health and well-being. According to World Health Organization (WHO), an estimation of 4.2 million deaths can be attributed to outdoor air pollution annually (Shaddick et al., 2020). The Air Quality Index (AQI) is a standardized measurement used to represent air quality, including capturing the concentrations of ambient air pollution such as particulate matter (PM) and ground-level ozone. AQI is ranged from 0 - 500 with different categories as below [1](https://www.airnow.gov/aqi/aqi-basics/): 
+Air quality is a persistent environmental challenge with significant implications for public health and well-being. According to World Health Organization (WHO), an estimation of 4.2 million deaths can be attributed to outdoor air pollution annually (Shaddick et al., 2020). The Air Quality Index (AQI) is a standardized measurement used to represent air quality, including capturing the concentrations of ambient air pollution such as particulate matter (PM) and ground-level ozone. [AQI](https://www.airnow.gov/aqi/aqi-basics/) is ranged from 0 - 500 with different categories as below: 
 
   0 - 50: Good 
   
