@@ -11,7 +11,7 @@ Final Project
 Air quality is a persistent environmental challenge with significant implications for public health and well-being. The Air Quality Index (AQI) is a standardized measurement used to represent air quality, including capturing the concentrations of ambient air pollution such as particulate matter (PM) and ground-level ozone. Understanding the AQI in our surroundings is crucial for assessing environmental risks and their impact on public health. This model aims to predict AQI levels in California, enabling better decision-making, public awareness, and proactive measures to mitigate health risks associated with air pollution.
 
 ## Data
-Three data sets were used in this project: daily AQI summary including daily mean PM<sub>2.5</sub> concentration, Ozone concentration, and NO<sub>2</sub> concentration in the year 2022 provided by US EPA[1](https://www.epa.gov/outdoor-air-quality-data/download-daily-data). County site locations are used for interpolation onto a uniform grid. Parameters such as daily observations and county FIPS were ignored and cleaned after merging the data together.
+Three data sets were used in this project: daily AQI summary including daily mean PM<sub>2.5</sub> concentration, Ozone concentration, and NO<sub>2</sub> concentration along with geographical coordinates in the year 2022 provided by US EPA[1](https://www.epa.gov/outdoor-air-quality-data/download-daily-data). Parameters such as daily observations and county FIPS were ignored and cleaned after merging the data together. The data was cleaned and processed by renaming columns for clarity, handling units (e.g., ug/m³, ppm, ppb), and interpolating AQI values over a fine geographic grid. This allowed for spatial visualization of air quality across California, ensuring accurate alignment with geographic boundaries.
 
 Here's an illustration of data: 
 <table border="1">
@@ -80,6 +80,8 @@ Here's an illustration of data:
     </tr>
   </tbody>
 </table>
+
+Here is an example of the air quality distribution map in California: 
 
 
 
