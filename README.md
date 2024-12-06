@@ -82,7 +82,7 @@ Here's an illustration of data:
 </table>
 
 Here is an example of the air quality distribution map in California: 
-
+![Map](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/AQI.png)
 
 
 ## Methods 
