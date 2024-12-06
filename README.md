@@ -25,7 +25,7 @@ Air quality is a persistent environmental challenge with significant implication
 Understanding the AQI in our surroundings is crucial for assessing environmental risks and their impact on public health. Understanding the relationships between air quality and ambient air pollutants is crucial for designing targeted mitigation strategies, improving public health outcomes, and informing policies to address air pollution in the most affected areas. This model aims to predict AQI levels in California, enabling better decision-making, public awareness, and proactive measures to mitigate health risks associated with air pollution. 
 
 ## Data
-Three data sets were used in this project: daily AQI summary including daily mean PM<sub>2.5</sub> concentration, Ozone concentration, and NO<sub>2</sub> concentration along with geographical coordinates in the year 2022 provided by US EPA[2](https://www.epa.gov/outdoor-air-quality-data/download-daily-data). Parameters such as daily observations and county FIPS were ignored and cleaned after merging the data together. The data was cleaned and processed by removing unnecessary and overlapped columns, handling units (e.g., ug/m³, ppm, ppb), and interpolating AQI values over a fine geographic grid. This allowed for spatial visualization of air quality across California, ensuring accurate alignment with geographic boundaries. 
+Three data sets were used in this project: daily AQI summary including daily mean PM<sub>2.5</sub> concentration, Ozone concentration, and NO<sub>2</sub> concentration along with geographical coordinates in the year 2022 provided by US EPA[2](https://www.epa.gov/outdoor-air-quality-data/download-daily-data). Parameters such as daily observations and county FIPS were ignored and cleaned after merging the data together. 
 
 
 Here's an illustration of data: 
@@ -118,10 +118,15 @@ The AQI map for 2023 shows better air quality in northern California. While in s
 
 
 ## Methods 
-
-
+The data was collected was U.S. EPA. Data preprocessing involved removing irrelevant columns, handling missing values, and standardizing units. The datasets were merged by date and county, with additional features like pollutant interactions. Three models (linear regression, LightGBM, and random forest regression) were trained and evaluated using metrics such as RMSE, R², and REC curves. Interpolated AQI values were visualized on a geographic grid, and feature importance was analyzed to identify key predictors. 
 
 ## Modelling 
+*Linear Regression Model*
+
+*Random Forest Model*
+
+*LightGBM*
+The LightGBM (Gradient Boosting Machine) 
 
 ## Results 
 
