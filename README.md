@@ -1,4 +1,4 @@
-# Estimating Daily Average Air Quality with Ambient Air Pollution Particle Concentration
+![image](https://github.com/user-attachments/assets/b3dec788-0d01-465d-acb8-4ce9e072ee25)# Estimating Daily Average Air Quality with Ambient Air Pollution Particle Concentration
 Bella Chen 
 
 Instructors: Dr. Lozinski，Catherine Banach
@@ -100,7 +100,7 @@ Bewlos are the air quality and ambient air pollution particulates distribution m
 
 AQI 
 
-![Map](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/image.png)
+![Map](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/AQI.png)
 
 PM<sub>2.5</sub> 
 
@@ -124,53 +124,73 @@ For all models, the maximum tolerance (ϵ) is set to 20, as it effectively captu
 
 **Linear Regression Model** 
 
-Here is the performance of a linear model represented by the REC curve is shown below. 
+Here is the performance of a linear model represented by the REC curve is shown below: 
+
 ![lr](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/linear_rec.png) 
 
 The RMSE result is **6.61** and R² is **0.879**. 
 
+
  
 **Random Forest Model**
 
-The feature importance from the decision tree model is shown below:
+The feature importance and REC curve from the decision tree model is shown below:
+
 ![r](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/feature_importance_rf.png) 
+
+![rf](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/randomforest.png) 
 
 The RMSE result is **1.00** and R² is **0.997**. 
 The PM2.5 has a more significant effect on prediction on AQI. 
 
 
+
 **LightGBM**
 
 The LightGBM (Gradient Boosting Machine) is a high-performance implementation of the gradient boosting framework, specifically designed for speed and efficiency while maintaining prediction accuracy (Zhang et al., 2023). 
-The feature importance from the decision tree model is shown below:
+
+The feature importance and and REC curve from the decision tree model is shown below:
+
 ![lgbm](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/lgbm.png)
 
+| Feature                          | Importance Value |
+|----------------------------------|------------------|
+| Daily Mean PM2.5 Concentration   | 1777             |
+| Daily Max 8-hour Ozone Concentration | 457              |
+| Daily Max 1-hour NO2 Concentration   | 766              |
+
+
+![g](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/gbm_rec.png)
+
 The RMSE result is **0.0472** and R² is **0.999**. 
-Daily Mean PM2.5 Concentration: **1777**
-Daily Max 8-hour Ozone Concentration: **457**
-Daily Max 1-hour NO2 Concentration: **766**
 
+These results indicate that PM<sub>2.5</sub> concentration is the dominant factor in predicting air quality, as it has the highest feature importance value.
 
-The REC curve visualization is included to present a clear comparison. 
+The full REC curve visualization is included to present a clear comparison. 
 ![rec](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/recs.png) 
 
-It is shown that among all 3 models, including linear regression, decision tree regression, artificial neural network, and ensemble method, can produce reliable predictions of local air quality, with the decision tree model having the best performance.
+Among the three models tested, including linear regression, random forest regression, and LightGBM, all are capable of providing reliable predictions of local air quality estimation. However, the LightGBM model demonstrates the best performance compared to the others since it almost reached a 100% accuracy. 
 
-**k-fold cross-validation** 
-A k-fold cross-validation is performed to test the performance of LightGBM model. 
-![crs]()
+
+## Discussions 
+
+Among all three models, LightGBM  demonstrated the best prediction performance, as it achieves approximately 100% accuracy at low tolerance levels which is indicated by the REC curve. To further evaluate the reliability and robustness of this model, a k-fold cross-validation (5-fold) was performed, with the following results:
 
 Cross-Validation RMSE (Mean): 0.384
 Cross-Validation RMSE (Standard Deviation): 0.310
 Cross-Validation RMSE (Min): 0.106
 Cross-Validation RMSE (Max): 0.961
 
-## Discussions 
-Among all 3 models, the LightGBM model predicts the values the best. 
+The mean RMSE represents the average prediction error across all folds. A value of 0.384 is relatively low, indicating that the model's predictions are close to the true values, with only small errors on average. 
 
+According to scholarly research, LightGBM models play a crucial role in understanding air pollution patterns. With its ability to efficiently handle non-linear data and its high processing speed, LightGBM emerges as the most suitable model for this task (Ravindiran et al., 2023). In contrast, linear regression struggled to capture the complex patterns in AQI data, while random forest, though robust, exhibited slightly lower precision.
+
+These findings underscore the importance of employing advanced tree-based methods like LightGBM for reliable air quality predictions. 
 
 ## Works Cited
 AQI Basics | AirNow.gov. (n.d.). https://www.airnow.gov/aqi/aqi-basics/ 
+
+Ravindiran, G., Hayder, G., Kanagarathinam, K., Alagumalai, A., & Sonne, C. (2023). Air quality prediction by machine learning models: A predictive study on the indian coastal city of Visakhapatnam. Chemosphere, 338, 139518. https://doi.org/10.1016/j.chemosphere.2023.139518
 
 Shaddick, G., Thomas, M. L., Mudu, P., Ruggeri, G., & Gumy, S. (2020). Half the world’s population are exposed to increasing air pollution. Npj Climate and Atmospheric Science, 3(1). https://doi.org/10.1038/s41612-020-0124-2
 
