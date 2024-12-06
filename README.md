@@ -81,9 +81,19 @@ Here's an illustration of data:
   </tbody>
 </table>
 
-Here is an example of the air quality distribution map in California: 
+Bewlos are the air quality and ambient air pollution particulates distribution map in California: 
+
+AQI 
 ![Map](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/AQI.png)
 
+PM<sub>2.5</sub> 
+![pm](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/PM.png)
+
+O<sub>3</sub>
+![o](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/Ozone.png) 
+
+NO<sub>2</sub>
+![n](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/NO2.png) 
 
 ## Methods 
 
