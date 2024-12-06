@@ -11,10 +11,15 @@ Final Project
 Air quality is a persistent environmental challenge with significant implications for public health and well-being. According to World Health Organization (WHO), an estimation of 4.2 million deaths can be attributed to outdoor air pollution annually (Shaddick et al., 2020). The Air Quality Index (AQI) is a standardized measurement used to represent air quality, including capturing the concentrations of ambient air pollution such as particulate matter (PM) and ground-level ozone. AQI is ranged from 0 - 500 with different categories as below [1](https://www.airnow.gov/aqi/aqi-basics/): 
 
   0 - 50: Good 
+  
   51–100: Moderate air quality 
+  
   101–150: Unhealthy for sensitive groups 
+  
   151–200: Unhealthy 
+  
   201–300: Very unhealthy 
+  
   301–500: Hazardous
 
 Understanding the AQI in our surroundings is crucial for assessing environmental risks and their impact on public health. Understanding the relationships between air quality and ambient air pollutants is crucial for designing targeted mitigation strategies, improving public health outcomes, and informing policies to address air pollution in the most affected areas. This model aims to predict AQI levels in California, enabling better decision-making, public awareness, and proactive measures to mitigate health risks associated with air pollution. 
