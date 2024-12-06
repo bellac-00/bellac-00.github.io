@@ -130,15 +130,18 @@ The RMSE result is **6.61** and R² is **0.879**.
 *Random Forest Model*
 The feature importance from the decision tree model is shown below:
 ![r](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/feature_importance_rf.png) 
+
 The RMSE result is **1.00** and R² is **0.997**. 
 
 *LightGBM*
 The LightGBM (Gradient Boosting Machine) is a high-performance implementation of the gradient boosting framework, specifically designed for speed and efficiency while maintaining prediction accuracy (Zhang et al., 2023). The feature importance from the decision tree model is shown below:
 ![lgbm](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/lgbm.png)
+
 The RMSE result is **0.0472** and R² is **0.999**. 
 
 The REC curve visualization is included to present a clear comparison. 
 ![rec](https://github.com/bellac-00/bellac-00.github.io/blob/main/Plots/recs.png) 
+
 It is shown that even with a limited amount of features and sparse measurements, all 3 models, including linear regression, decision tree regression, artificial neural network, and ensemble method, can produce reliable predictions of local air quality, with the decision tree model having the best performance.
 
 
